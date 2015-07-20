@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/colorful"
+   >
+   <Button
+       android:id="@+id/btnJson"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+     android:stackFromBottom="true" 
+       ></Button>
+
+  <TextView
+      android:id="@+id/tvJson"
+      android:layout_width="fill_parent"
+      android:layout_height="match_parent" >
+</TextView>
+   
+</LinearLayout>

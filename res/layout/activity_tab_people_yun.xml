@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/empty_more_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+     
+     >
+
+      <com.cnmobi.tab.AnimationTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+   
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" 
+            android:layout_alignParentBottom="true"
+               android:layout_gravity="bottom" >
+  <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:visibility="visible" 
+               />
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/main_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+            
+                android:padding="0dip" >
+
+                <RadioButton
+                    android:id="@+id/people_yun_photo"
+                    style="@style/tabhost_item_background2"
+                    android:checked="true"
+                    android:paddingTop="15dp"
+                    android:text="@string/getNews"
+                    android:textColor="@color/person_yun_tabhost_text_font_selector" />
+
+                <RadioButton
+                    android:id="@+id/people_yun_media"
+                    style="@style/tabhost_item_background2"
+                    android:paddingTop="15dp"
+                    android:text="@string/signin"
+                    android:textColor="@color/person_yun_tabhost_text_font_selector" />
+
+                <RadioButton
+                    android:id="@+id/people_yun_music"
+                    style="@style/tabhost_item_background2"
+                    android:paddingTop="15dp"
+                    android:text="@string/introduction"
+                    android:textColor="@color/person_yun_tabhost_text_font_selector" />
+
+                <RadioButton
+                    android:id="@+id/people_yun_document"
+                    style="@style/tabhost_item_background2"
+                    android:paddingTop="15dp"
+                    android:text="@string/zxing"
+                    android:textColor="@color/person_yun_tabhost_text_font_selector" />
+
+            </RadioGroup> 
+            
+          
+        </LinearLayout>
+    </com.cnmobi.tab.AnimationTabHost>
+
+</LinearLayout>

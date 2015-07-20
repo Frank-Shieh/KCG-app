@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+	android:interpolator="@android:anim/accelerate_interpolator"
+	android:fillAfter="true"
+	android:fillBefore="false">
+	<alpha
+		android:fromAlpha="1.0"
+		android:toAlpha="0.0"
+		android:startOffset="1000"
+		android:duration="300" />
+
+</set>
+
+
+<!-- 
+
+	①因为这个动画是由几个动画复合组成的，所以外围就用一个set标签括起来，组成一个AnimationSet。
+	② Translate标签内主要定义位置的变化情况，fromXDelta="100%p"，为动画起始时，X坐标上的伸缩尺寸。是指正下方刚好一个View的高度的距离的地方开始出现，100%p是一个相对值，大于0为下方，小于0为上方。toXDelta="0" ，为动画结束时，X坐标上的伸缩尺寸。另：0.0表示收缩到没有（即刚好达到布局文件的原始位置停止），1.0表示正常无伸缩，值小于1.0表示收缩，值大于1.0表示放大 。
+	③参数fromXDelta和toXDelta都是指控件相对于parent的偏移距离，100%p就是正好在parent外面。左右是from和to来决定的（就是在根的左和右）。
+	④duration="800"，是指整个动作的时间用时为800毫秒，系统会根据这个时间自动调整速度。
+	⑤alpha标签内定义的是透明度，0为全透明，1.0为不透明，过程为300毫秒，让View为逐渐出现的过程。
+
+
+ -->
